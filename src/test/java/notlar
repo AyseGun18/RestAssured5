@@ -1,0 +1,28 @@
+PM                            RestAssured
+body.country                  body("country")
+body.'post code'              body("post code")
+body.places[0].'place name'   body("places[0].'place name'")
+body.places.'place name'      body("places.'place name'")   bütün place nameleri bir arraylist olarak verir
+
+{     burasi body kismi
+    "post code": "90210",
+    "country": "United States",
+    "country abbreviation": "US",
+    "places": [
+        {
+            "place name": "Beverly Hills",
+            "longitude": "-118.4065",
+            "state": "California",
+            "state abbreviation": "CA",
+            "latitude": "34.0901"
+        }
+    ]
+}
+
+https://jsonpathfinder.com/
+
+
+
+http://api.zippopotam.us/us/90210    path PARAM
+
+https://sonuc.osym.gov.tr/Sorgu.aspx?SonucID=9617  Query PARAM
